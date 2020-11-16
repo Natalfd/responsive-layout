@@ -1,0 +1,263 @@
+body {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+h1,
+h2,
+div.bottom,
+a.bottom,
+a.nav-button {
+  font-family: "Overpass", sans-serif;
+  color: rgb(26, 25, 25);
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-top: 5px;
+}
+
+header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+main {
+  padding-top: 35px;
+}
+
+main .container {
+  padding-top: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(69, 66, 77);
+}
+
+nav {
+  padding-bottom: 30px;
+}
+
+header.container {
+  padding-bottom: 35px;
+}
+.header-text {
+  color: rgb(88, 88, 88);
+  font-size: 1.125em;
+}
+
+.profile-image {
+  max-width: 185px;
+  padding-top: 20px;
+}
+
+a.bottom,
+a.nav-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+a.nav-button {
+  background-color: whitesmoke;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 5px;
+}
+
+a.nav-button:hover {
+  background-color: rgb(207, 192, 243);
+}
+
+.portfolio-section {
+  margin-top: 25px;
+}
+
+.contact-info {
+  font-size: 1.125em;
+  color: rgb(88, 88, 88);
+  padding: 15px;
+}
+
+.container {
+  padding: 25px;
+  margin: 0 auto;
+}
+
+.contact-info,
+.bottom,
+header {
+  background-color: rgb(226, 225, 245);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div.bottom {
+  text-align: left;
+}
+
+a.bottom {
+  width: 100%;
+  text-align: right;
+}
+
+a.bottom:hover {
+  color: rgb(151, 107, 252);
+}
+
+.footer-nav {
+  display: none;
+}
+
+/*---------------------- Media Queries ------------------*/
+
+@media (min-width: 768px) {
+  main .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  a.nav-button {
+    background-color: rgb(226, 225, 245);
+  }
+
+  a.nav-button:hover {
+    color: rgb(151, 107, 252);
+    background-color: transparent;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 15px;
+  }
+  .header-text {
+    margin: 0;
+    text-align: left;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .profile-image {
+    max-width: 100%;
+    padding: 0;
+    grid-column-start: 2;
+  }
+
+  footer,
+  .footer-nav {
+    display: block;
+  }
+
+  .footer-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+  }
+
+  .footer-nav h1 {
+    text-align: left;
+  }
+
+  .footer-nav nav {
+    text-align: right;
+  }
+
+  .footer-nav li {
+    margin-right: 0;
+  }
+
+  .footer-nav a.nav-button,
+  .footer-nav h1 {
+    font-size: 1em;
+  }
+
+  .bottom {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  body {
+    background-color: rgb(226, 225, 245);
+  }
+
+  .wrapper {
+    padding: 35px;
+  }
+
+  main {
+    background-color: whitesmoke;
+  }
+
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 1.125em;
+  }
+
+  nav {
+    text-align: right;
+  }
+
+  li {
+    margin-right: 0;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .header-text,
+  .contact-info p {
+    font-size: 1.4em;
+  }
+
+  a.nav-button {
+    font-size: 1.25em;
+  }
+}
