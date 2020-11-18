@@ -1,2 +1,2 @@
 # responsive-layout
- Treehouse Project 2
+ TreehouseProject2
